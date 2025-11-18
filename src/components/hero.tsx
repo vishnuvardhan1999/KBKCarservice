@@ -1,4 +1,3 @@
-
 import { Phone, MessageCircle } from "lucide-react";
 
 export function Hero() {
@@ -29,7 +28,8 @@ export function Hero() {
         <h2>KBK Car Service</h2>
         <p>
           Safe, devotional cab and driver service for Tirupati, Tamil Nadu temples,
-          Karnataka temples, and Kerala pilgrimage routes.<br/>
+          Karnataka temples, and Kerala pilgrimage routes.
+          <br />
           <span style={{ fontWeight: 500, color: "#eac391" }}>
             With over 30 years of experience, we are dedicated to serving spiritual journeys.
           </span>

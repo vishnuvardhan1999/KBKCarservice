@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MessageCircle, MapPin } from "lucide-react";
 
 export function Footer() {
@@ -18,11 +17,21 @@ export function Footer() {
           <div>
             <h4 className="footer-subtitle">Quick Links</h4>
             <ul className="footer-links">
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#routes">Temple Routes</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#about">About Us</a>
+              </li>
+              <li>
+                <a href="#routes">Temple Routes</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
           {/* Right - Contact */}
@@ -35,7 +44,9 @@ export function Footer() {
               </li>
               <li>
                 <MessageCircle className="footer-icon" />
-                <a href="https://wa.me/918179634105" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="https://wa.me/918179634105" target="_blank" rel="noopener noreferrer">
+                  WhatsApp
+                </a>
               </li>
               <li>
                 <Mail className="footer-icon" />
@@ -50,7 +61,8 @@ export function Footer() {
         </div>
         <div className="footer-divider"></div>
         <div className="footer-bottom">
-          © {new Date().getFullYear()} KBK Car Services. All rights reserved.<br />
+          © {new Date().getFullYear()} KBK Car Services. All rights reserved.
+          <br />
           Safe travels, devotional service, complete peace of mind.
         </div>
       </div>

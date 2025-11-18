@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const galleryImages = [
   { filename: "arunachalam.jpeg", name: "Arunachalam" },
@@ -20,13 +20,13 @@ const galleryImages = [
 export function ImageGallery() {
   const [current, setCurrent] = useState(0);
   const [fade, setFade] = useState(true);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<number | null>(null); // Use number for browser
 
   useEffect(() => {
     setFade(false);
     const fadeTimer = setTimeout(() => setFade(true), 60);
 
-    timeoutRef.current = setTimeout(() => {
+    timeoutRef.current = window.setTimeout(() => {
       setFade(false);
       setTimeout(() => setCurrent((c) => (c + 1) % galleryImages.length), 400);
     }, 3200);

@@ -1,4 +1,3 @@
-
 import "./App.css";
 
 import { Header } from "./components/header";
@@ -6,7 +5,7 @@ import { Hero } from "./components/hero";
 import { Services } from "./components/services";
 import { WhyChooseUs } from "./components/why-choose-us";
 import TempleRoutes from "./components/temple-routes";
-import { ImageGallery } from "./components/imagegallery";
+import { ImageGallery } from "./components/ImageGallery";
 import { Contact } from "./components/contact";
 import { Footer } from "./components/footer";
 

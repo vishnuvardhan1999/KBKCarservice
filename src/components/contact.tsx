@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 
 export function Contact() {
@@ -30,7 +30,7 @@ export function Contact() {
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
-    setFormData(f => ({ ...f, [e.target.name]: e.target.value }));
+    setFormData((f) => ({ ...f, [e.target.name]: e.target.value }));
   }
 
   function handleSubmit(e: React.FormEvent) {
@@ -68,7 +68,10 @@ export function Contact() {
                   <MessageCircle size={32} />
                 </div>
                 <h3>Thank You!</h3>
-                <p>We have received your enquiry. Our team will contact you soon to discuss your temple travel plans.</p>
+                <p>
+                  We have received your enquiry. Our team will contact you soon to
+                  discuss your temple travel plans.
+                </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="contact-form">
@@ -83,7 +86,9 @@ export function Contact() {
                         onChange={handleChange}
                         placeholder="Enter your full name"
                       />
-                      {errors.fullName && <span className="contact-error">{errors.fullName}</span>}
+                      {errors.fullName && (
+                        <span className="contact-error">{errors.fullName}</span>
+                      )}
                     </label>
                   </div>
                   <div>
@@ -97,7 +102,9 @@ export function Contact() {
                         placeholder="Enter your phone number"
                         pattern="\d{10,}"
                       />
-                      {errors.phoneNumber && <span className="contact-error">{errors.phoneNumber}</span>}
+                      {errors.phoneNumber && (
+                        <span className="contact-error">{errors.phoneNumber}</span>
+                      )}
                     </label>
                   </div>
                 </div>
@@ -112,7 +119,9 @@ export function Contact() {
                         onChange={handleChange}
                         placeholder="your@email.com"
                       />
-                      {errors.email && <span className="contact-error">{errors.email}</span>}
+                      {errors.email && (
+                        <span className="contact-error">{errors.email}</span>
+                      )}
                     </label>
                   </div>
                   <div>
@@ -124,7 +133,9 @@ export function Contact() {
                         value={formData.travelDate}
                         onChange={handleChange}
                       />
-                      {errors.travelDate && <span className="contact-error">{errors.travelDate}</span>}
+                      {errors.travelDate && (
+                        <span className="contact-error">{errors.travelDate}</span>
+                      )}
                     </label>
                   </div>
                 </div>
@@ -137,7 +148,9 @@ export function Contact() {
                     onChange={handleChange}
                     placeholder="e.g., Chennai Airport, Bangalore, etc."
                   />
-                  {errors.pickupLocation && <span className="contact-error">{errors.pickupLocation}</span>}
+                  {errors.pickupLocation && (
+                    <span className="contact-error">{errors.pickupLocation}</span>
+                  )}
                 </label>
                 <label>
                   Temple Destinations / Travel Plan *
@@ -148,7 +161,9 @@ export function Contact() {
                     onChange={handleChange}
                     placeholder="e.g., Tirupati, Rameswaram, Madurai, etc."
                   />
-                  {errors.templeDestinations && <span className="contact-error">{errors.templeDestinations}</span>}
+                  {errors.templeDestinations && (
+                    <span className="contact-error">{errors.templeDestinations}</span>
+                  )}
                 </label>
                 <label>
                   Message / Special Request
@@ -176,19 +191,25 @@ export function Contact() {
                 </li>
                 <li>
                   <MessageCircle className="contact-details-icon" />
-                  <a href="https://wa.me/918179634105" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://wa.me/918179634105"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Chat on WhatsApp
                   </a>
                 </li>
                 <li>
-                  <Mail className="contact-details-icon" /><a href="mailto:vishnuvardhanmec3@gmail.com">
-                    vishnuvardhanmec3@gmail.com
-                  </a>
+                  <Mail className="contact-details-icon" />
+                  <a href="mailto:vishnuvardhanmec3@gmail.com">vishnuvardhanmec3@gmail.com</a>
                 </li>
               </ul>
               <div className="contact-response">
                 <strong>Response Time:</strong>
-                <div>We typically respond within 2-4 hours during business hours (8 AM - 8 PM IST)</div>
+                <div>
+                  We typically respond within 2-4 hours during business hours (8 AM -
+                  8 PM IST)
+                </div>
               </div>
             </div>
           </div>

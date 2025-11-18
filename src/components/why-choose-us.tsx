@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Calendar,
   Map,
@@ -80,7 +79,7 @@ export function WhyChooseUs() {
                 className={`whychooseus-benefit-box benefit-box-${idx + 1}`}
               >
                 <div className="whychooseus-benefit-icon">
-                  {React.createElement(benefit.icon, {
+                  {benefit.icon({
                     size: 26,
                     className: "icon",
                     color: "#ae8b3c",

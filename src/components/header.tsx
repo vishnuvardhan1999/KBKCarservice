@@ -1,4 +1,3 @@
-
 import { Phone, MessageCircle } from "lucide-react";
 
 export function Header() {
@@ -24,10 +23,22 @@ export function Header() {
           }}
         />
         <div className="header-title">
-          <div className="kbk-main" style={{ fontWeight: 800, fontSize: "2.1em", letterSpacing: "1px", color: "#81502A", lineHeight: "1em" }}>
+          <div
+            className="kbk-main"
+            style={{
+              fontWeight: 800,
+              fontSize: "2.1em",
+              letterSpacing: "1px",
+              color: "#81502A",
+              lineHeight: "1em",
+            }}
+          >
             KBK
           </div>
-          <div className="kbk-sub" style={{ fontSize: "1em", color: "#a17623", marginTop: "2px", fontWeight: 600 }}>
+          <div
+            className="kbk-sub"
+            style={{ fontSize: "1em", color: "#a17623", marginTop: "2px", fontWeight: 600 }}
+          >
             Car Service
           </div>
         </div>
