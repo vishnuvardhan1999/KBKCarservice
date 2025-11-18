@@ -6,7 +6,7 @@ import { Hero } from "./components/hero";
 import { Services } from "./components/services";
 import { WhyChooseUs } from "./components/why-choose-us";
 import TempleRoutes from "./components/temple-routes";
-import { ImageGallery } from "./components/ImageGallery";
+import { ImageGallery } from "./components/imagegallery";
 import { Contact } from "./components/contact";
 import { Footer } from "./components/footer";
 

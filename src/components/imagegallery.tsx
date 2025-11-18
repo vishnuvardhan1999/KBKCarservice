@@ -24,16 +24,15 @@ export function ImageGallery() {
 
   useEffect(() => {
     setFade(false);
-    const fadeTimeout = setTimeout(() => setFade(true), 60);
+    const fadeTimer = setTimeout(() => setFade(true), 60);
+
     timeoutRef.current = setTimeout(() => {
       setFade(false);
-      setTimeout(
-        () => setCurrent((c) => (c + 1) % galleryImages.length),
-        400 // Slightly longer for smoother transition
-      );
+      setTimeout(() => setCurrent((c) => (c + 1) % galleryImages.length), 400);
     }, 3200);
+
     return () => {
-      clearTimeout(fadeTimeout);
+      clearTimeout(fadeTimer);
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
   }, [current]);
