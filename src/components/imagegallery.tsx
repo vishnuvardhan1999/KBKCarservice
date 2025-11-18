@@ -20,7 +20,7 @@ const galleryImages = [
 export function ImageGallery() {
   const [current, setCurrent] = useState(0);
   const [fade, setFade] = useState(true);
-  const timeoutRef = useRef<number | null>(null); // Use number for browser
+  const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     setFade(false);

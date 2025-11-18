@@ -39,7 +39,6 @@ export function Services() {
   return (
     <section className="services-section">
       <div className="services-container">
-        {/* Left: Content & Grid */}
         <div className="services-left">
           <span className="services-kicker"><h1>Services</h1></span>
           <h3 className="services-title">Temple Travel, Made Truly Hassle-Free</h3>
@@ -47,7 +46,6 @@ export function Services() {
             From Tirupati darshan to extended South India temple tours, we handle every
             detail so you can focus on your prayers.
           </p>
-
           <div className="services-grid">
             {services.map((service, idx) => (
               <article
@@ -63,8 +61,6 @@ export function Services() {
             ))}
           </div>
         </div>
-
-        {/* Right: Image / Showcase */}
         <div className="services-right">
           <div className="services-image-frame">
             <img
@@ -78,7 +74,6 @@ export function Services() {
                 Trusted by families for <strong>safe & punctual</strong> temple journeys.
               </p>
             </div>
-
             <div className="services-stat-card">
               <div>
                 <p className="services-stat-number">10+</p>

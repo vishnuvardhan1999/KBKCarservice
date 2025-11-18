@@ -37,13 +37,17 @@ export function Header() {
           </div>
           <div
             className="kbk-sub"
-            style={{ fontSize: "1em", color: "#a17623", marginTop: "2px", fontWeight: 600 }}
+            style={{
+              fontSize: "1em",
+              color: "#a17623",
+              marginTop: "2px",
+              fontWeight: 600,
+            }}
           >
             Car Service
           </div>
         </div>
       </div>
-
       <div className="header-right">
         <button onClick={handleCall} className="header-btn">
           <Phone className="icon" /> Call
