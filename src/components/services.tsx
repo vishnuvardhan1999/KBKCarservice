@@ -55,7 +55,7 @@ export function Services() {
                 className={`service-card service-card-${idx + 1}`}
               >
                 <div className="service-icon-wrap">
-                  {service.icon({ size: 24, className: "service-icon" })}
+                  <service.icon size={24} className="service-icon" />
                 </div>
                 <h3 className="service-card-title">{service.title}</h3>
                 <p className="service-card-description">{service.description}</p>
