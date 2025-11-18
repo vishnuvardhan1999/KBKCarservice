@@ -1,0 +1,55 @@
+:root {
+  font-family: 'Merriweather', serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #4B3412;
+  background: linear-gradient(120deg, #fff8e1 0%, #f2e1c1 65%, #eac391 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: #C09845;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #9E7B34;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #d4af37;
+}
+
+@media (max-width: 700px) {
+  .app-main {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
