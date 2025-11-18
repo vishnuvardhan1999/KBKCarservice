@@ -7,7 +7,7 @@ export function Footer() {
         <div className="footer-grid">
           {/* Left - Branding & Description */}
           <div>
-            <h3 className="footer-title">KBK Car Service</h3>
+            <h3 className="footer-title">KBK Cars Tirupati</h3>
             <p className="footer-desc">
               30+ years of trusted temple travel service across South India.<br />
               Safe, devotional, family-friendly tours for pilgrims.
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
         <div className="footer-divider"></div>
         <div className="footer-bottom">
-          © {new Date().getFullYear()} KBK Car Services. All rights reserved.
+          © {new Date().getFullYear()} KBK Cars Tirupati. All rights reserved.
           <br />
           Safe travels, devotional service, complete peace of mind.
         </div>

@@ -25,7 +25,7 @@ export function Hero() {
       </div>
       <div className="hero-content">
         <h1>Your Trusted Temple Travel Cab Service Across South India</h1>
-        <h2>KBK Car Service</h2>
+        <h2>KBK Cars Tirupati</h2>
         <p>
           Safe, devotional cab and driver service for Tirupati, Tamil Nadu temples,
           Karnataka temples, and Kerala pilgrimage routes.

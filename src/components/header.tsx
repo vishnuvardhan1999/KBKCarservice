@@ -44,7 +44,7 @@ export function Header() {
               fontWeight: 600,
             }}
           >
-            Car Service
+            Cars Tirupati
           </div>
         </div>
       </div>
